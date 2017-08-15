@@ -1,0 +1,139 @@
+/*Stylesheet for page design  */
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #e5e5e5;
+}
+#main{
+    max-width: 1200px;
+    margin: 100px auto;
+
+}
+.header{
+    width: 100%;
+    position: relative;
+}
+.header .dropdown{
+    position: relative;
+    text-align: right;
+    right: 10px;
+    bottom: 20px;
+}
+.header .dropdown>button{
+    width: 150px;
+    padding: 5px 10px;
+    border-radius: 0;
+    background-color: #fff;
+    text-align: left;
+}
+.dropdown-menu:before{
+    content: "";
+    height: 10px;
+    width: 10px;
+    transform: rotate(45deg);
+    position: absolute;
+    top: -5px;
+    right: 40%;
+    background-color: #fff;
+    z-index: 0;
+}
+.dropdown-menu{
+    margin-top: 10px;
+    margin-right: -50px;
+    padding: 20px 10px 10px;
+    border: 0;
+    border-radius: 0;
+    z-index: 9999;
+}
+.dropdown-item{
+    border: 1px solid #D59797;
+    background-color: #fff;
+    padding: 5px 15px;
+    margin: 0px 5px;
+    color: #D59797;
+    font-size: 0.9em;
+}
+.container-fluid{
+    margin-top: 20px;
+    padding-right: 0;
+    padding-left: 0;
+}
+.row{
+   margin: 0;
+}
+.col-md-4{
+    padding: 10px;
+}
+
+.box{
+    background-color: #fff;
+    height: 200px;
+    width: 100%;
+    position: relative;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 1px 1px 1px #ccc;
+}
+.box__image{
+    position: absolute;
+    left: 10px;
+    top: 20px;
+    bottom: 20px;
+    width: 40%;
+    border-radius: 4px;
+}
+.box__image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: 0;
+}
+.box__details{
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    bottom: 20px;
+    width: 55%;
+    border-radius: 4px;
+    padding-left: 10px;
+}
+.box__details ul{
+    list-style: none;
+    margin-top: 10px;
+    -webkit-padding-start: 0;
+}
+.box__details ul li:before{
+    content: " ";
+    position: absolute;
+    left: 10px;
+    margin-top: 0px;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #D59797;
+    z-index: 9999;
+}
+.box__details ul li{
+    border-left-style: solid;
+    border-left: double #D59797;
+    margin-left: 3px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    line-height: 14px;
+    font-size: 0.9em;
+    color: #222;
+}
+.box__details ul li:last-child{
+    border: 0; 
+}
+
+.box__details .title{
+    font-weight: bold;
+    color: #111;
+}
+.box__details .title:after{
+    content: " - ";
+}
